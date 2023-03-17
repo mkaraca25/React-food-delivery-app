@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 
 const ProductCard = (props) => {
-  const { id, title, image01, price } = props.item;
+  const { id, title,slug, image01, price } = props.item;
 //   const dispatch = useDispatch();
 
 //   const addToCart = () => {
@@ -24,12 +24,12 @@ const ProductCard = (props) => {
   return (
     <div className="product__item">
       <div className="product__img">
-      <Link to={`/foods/${id}`}><img src={image01} alt="product-img" className="w-50" /></Link>
+      <Link to={`/foods/${slug}`}><img src={image01} alt="product-img" className="w-50" /></Link>
       </div>
 
       <div className="product__content">
         <h5>
-          <Link to={`/foods/${id}`}>{title}</Link>
+          <Link to={`/foods/${title.toLowerCase().replace(/ /g, "-")}`}>{title}</Link>
         </h5>
         <div className=" d-flex align-items-center justify-content-between ">
           <span className="product__price">${price}</span>
