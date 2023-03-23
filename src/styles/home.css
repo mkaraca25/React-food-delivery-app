@@ -145,10 +145,12 @@
       font-size: 0.8rem;
     }
   }
+
   @media only screen and (max-width: 576px) {
     .hero__content {
       text-align: center;
     }
+   
   
     .hero__btns {
       justify-content: center;
