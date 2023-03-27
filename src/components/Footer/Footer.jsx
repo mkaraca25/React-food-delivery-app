@@ -19,7 +19,7 @@ const Footer = () => {
           <Col lg="3" md="4" sm="6">
             <div className=" footer__logo text-start">
               <img src={logo} alt="logo" />
-              <h5>Açımm! Açç!</h5>
+              <h5>Taste of Home</h5>
               <p>Erzurum'a lezzet getiren adrestesiniz.</p>
             </div>
           </Col>
