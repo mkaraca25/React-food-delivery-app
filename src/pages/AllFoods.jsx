@@ -23,7 +23,7 @@ const AllFoods = () => {
     if (item.title.toLowerCase().includes(searchTerm.toLowerCase())) {
       return item;
     } else {
-       return
+      return console.log("not found");
     }
   });
 
@@ -43,6 +43,7 @@ const AllFoods = () => {
   return (
     <Helmet title="All-Foods">
       <CommonSection title="All Foods" />
+
       <section>
         <Container>
           <Row>
@@ -55,7 +56,7 @@ const AllFoods = () => {
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
                 <span>
-                  <i class="ri-search-line"></i>
+                  <i className="ri-search-line"></i>
                 </span>
               </div>
             </Col>
